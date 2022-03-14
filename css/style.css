@@ -1,21 +1,38 @@
 header{
    align-items: center;
-   color: #808080;
+   color: #717171;
    display: block;
    position: sticky;
    top: 0;
    background-color: white;
+   padding: 5px 0px;
+
 }
 
 body{
     margin: 15px 20px;
     background-color: #ffff;
+    color: #717171;
+    font-size: 16px;
 }
-  header input{
+  .busca input{
+    display: flex;
+    width: 75%;
+    height: 45px;
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 0;
     align-items: center;
     justify-content: center;
-    background-color: #DCDCDC;
-    height: 30px;
+    background-color: #f7f7f7;;
+    border: none;
+    border-radius: 8px;
+    overflow: visible;
+    cursor: text;    
+  }
+  .busca input textarea:focus, input:focus{
+      box-shadow: 0 0 0 0;
+      outline: 0;
   }
    
 
@@ -23,7 +40,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 20px 10px;
-    border-bottom: 1px solid #DCDCDC;
+    border-bottom: 1px solid #dcdcdc;;
    
 }
 .logo{
@@ -37,12 +54,15 @@ body{
     gap: 20px;
 
 }
-li a{
+#menu li a{
     text-decoration: none;
-    color: #808080
+    color: #717171;
 }
 #menu p{
     line-height: 40px;
+}
+#menu li a:hover{
+    color: #ea1d2c;
 }
 .navegacao{
     flex-direction: column;
@@ -56,20 +76,146 @@ li a{
 
 }
 .cont_nav button{
-    border-radius: 15px;
-    
-    height: 40px;
+    cursor:pointer;
+    border-radius: 16px;
+    border: solid 1px #dcdcdc;
+    height: 32px;
     width: 120px;
     text-align: center;
     margin-top: 15px;
+    padding: 5px 5px;
     background-color: #ffff;
+    color: #717171;
+    
 
 }
+ .cont_nav button:hover{
+     background-color: #f8f8f8;
+ }
+ 
+
 main{
     margin-top: 20px;
     
 }
 .opcao{
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+.opcao ul{
     display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
     
+}
+.opcao img{
+    width: 100px;
+    
+}
+.opcao li img:hover{
+    scale: 105%;
+    
+}
+.opcao figcaption{
+    text-align: center;
+}
+.banner ul{
+    display: flex;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 5px;
+}
+.banner li img{
+    width: 250px;
+    height: auto;
+}
+
+.lojas{
+    display: flex;
+    flex-direction: column;
+}
+
+.ultimas_lojas {
+    display: flex;
+    padding: 10px 0px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.ultimas_lojas ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+}
+
+.lojas h2{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin: 40px 0px;
+    
+}
+.ultimas_lojas img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+}
+figcaption{
+    text-align: center;
+    padding: 10px 0px;
+}
+.famosos ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px; 
+    margin-bottom: 30px;
+}
+.famosos img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+
+}
+.logo_rodope{
+    width: 45px;
+
+}
+
+footer{
+    margin: 20px 0px;
+    padding: 30px 10px;
+    border-top: 1px solid #dcdcdc ;
+    width: 100%;
+    height: auto;
+    color: #717171;
+    gap: 10px;
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+footer ul{
+    display: flex;
+    gap: 20px;
+   }
+
+footer a{
+    font-size: 18px;
+    text-decoration: none;
+    color:  #717171;
+}
+footer a:hover{
+    color: #383838
+}
+
+.inf_finais p{
+    width: 600px;
+   
 }
